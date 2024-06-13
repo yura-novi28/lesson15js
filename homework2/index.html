@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="pencil main__pencil"></div>
+            <div class="ipad main__ipad">
+                <div class="ipad__button"></div>
+                <div class="ipad__table">
+                    <div class="ipad__list">
+                        <div class="ipad__container-list">
+                            <p class="title ipad__title">Список завдань</p>
+                            <div class="ipad__block">
+                                <input class="inputCheck" type="checkbox" id="1"><label for="1">HTML</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ipad__list-add">
+                        <div class="ipad__container-add">
+                            <p class="title title_none-margin">Додати нове завдання</p>
+                            <form class="ipad__form">
+                                <input type="text" class="input-text">
+                                <button class="button ipad__form-button">додати</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="alertNull" class="alert alert-null">
+                        <div class="alert__container">    
+                            <div class="alert__flex">
+                                <p class="alert__title">Попередження!</p>
+                                <i id="close" class="fa-solid fa-xmark"></i>
+                            </div>
+                            <p id="textNull" class="alert__text">Пусте поле не можна добавити.</p>
+                            <p id="textOne" class="alert__text">Останній таск зі списку Ви не можете видалити.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
